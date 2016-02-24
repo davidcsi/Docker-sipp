@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN mkdir -p /root/sipp
 WORKDIR /root/sipp
 
-RUN git clone https://davidcsi:M3ll4m0d4v1d@github.com/libon/voice-ci-tests.git
+RUN git clone https://github.com/libon/voice-ci-tests.git
 
 ################################################
 # Build:
@@ -22,4 +22,3 @@ RUN git clone https://davidcsi:M3ll4m0d4v1d@github.com/libon/voice-ci-tests.git
 # Run in interactive mode and attach to existing network:
 ### docker run -i -t -v $PWD/root/sipp/ --name=sipp --net=http_network davidcsi/sipp /bin/bash
 ENV DEBIAN_FRONTEND dialog
-
