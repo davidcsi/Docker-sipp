@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN mkdir -p /root/sipp
 WORKDIR /root/sipp
 
-RUN git clone https://github.com/libon/voice-ci-tests.git
+##RUN git clone https://github.com/libon/voice-ci-tests.git
 
 ################################################
 # Build:
