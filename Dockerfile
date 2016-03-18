@@ -16,9 +16,12 @@ WORKDIR /root/sipp
 COPY conf/id_rsa.github /root/.ssh/id_rsa.github
 COPY conf/ssh_config /root/.ssh/config
 
+WORKDIR /root/
+RUN cd /root/
 RUN git clone git@github.com:libon/voice-ci-tests.git
+
 RUN cd /root/sipp/voice-ci-tests
-WORKDIR /root/sipp/voice-ci-tests
+WORKDIR /root/voice-ci-tests
 RUN ./launch_tests.pl qap.cfg
 ################################################
 # Build:
