@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 MAINTAINER David Villasmil "david.villasmil@gmail.com"
-
+# Based on Giacomo Vacca's https://github.com/giavac/docker-scripts/tree/master/Dockerfiles/sipp
 
 ENV DEBIAN_FRONTEND noninteractive
 ### RUN apt-get update && apt-get -y -q install sip-tester vim ngrep tcpdump ssldump && rm -rf /var/lib/apt/lists/*
